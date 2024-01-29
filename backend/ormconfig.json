@@ -1,0 +1,10 @@
+{
+    "type": "sqlite",
+    "database": "prisma/dev.db",
+    "synchronize": true,
+    "entities": ["src/models/*.ts"],
+    "cli": {
+      "entitiesDir": "src/models"
+    }
+  }
+  
