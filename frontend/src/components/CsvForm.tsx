@@ -42,7 +42,7 @@ const CsvForm: React.FC = () => {
   };
 
   return (
-    <div className='max-w-3xl mx-auto h-full justify-center'>
+    <div className='max-w-4xl mx-auto h-full justify-center'>
       <form
         onSubmit={handleSubmit}
         className='border-2 border-black rounded pt-12 pb-16 px-8 flex flex-col shadow-lg'

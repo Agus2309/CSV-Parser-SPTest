@@ -11,7 +11,7 @@ export interface CsvCardData {
 
 const CsvCard: React.FC<CsvCardData> = ({ data }) => {
   return (
-    <div className='mb-10 max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105"'>
+    <div className='mb-10 max-w-xs mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-110"'>
       <div className='p-5'>
         <h2 className='mb-2 text-xl font-bold text-violet-600'>{data.name}</h2>
         <h3><span className='text-violet-600 font-semibold'>City:</span> {data.city}</h3> 
