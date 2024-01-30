@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { Request, Response } from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import multer from 'multer'
@@ -13,6 +13,9 @@ app.use(bodyParser.json())
 const storage = multer.memoryStorage()
 const upload = multer({ storage: storage })
 
+app.get('/', (_req: Request, res: Response) => {
+  return res.send('Express Typescript on Vercel')
+})
 app.post('/api/files', upload.single('file'), fileUpload) 
 app.get('/api/users', searchData)
 app.delete('/api/users', deleteAllUsers)
