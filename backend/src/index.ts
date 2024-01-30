@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 const storage = multer.memoryStorage()
 const upload = multer({ storage: storage })
 
-app.post('/api/files', upload.single('file'), fileUpload)
+app.post('/api/files', upload.single('file'), fileUpload) 
 app.get('/api/users', searchData)
 app.delete('/api/users', deleteAllUsers)
 
